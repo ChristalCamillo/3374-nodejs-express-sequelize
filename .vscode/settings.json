@@ -1,0 +1,18 @@
+{
+  "editor.codeActionsOnSave": {
+	"source.fixAll.eslint": "explicit"
+},
+"eslint.validate": [
+	"javascript"
+],
+"editor.formatOnSave": false,
+"sqltools.useNodeRuntime": true,
+"sqltools.connections": [
+	{
+		"previewLimit": 50,
+		"driver": "SQLite",
+		"name": "CursoOrmNode",
+		"database": "${workspaceFolder:3374-nodejs-express-sequelize}/database.sqlite"
+	}
+]
+ }
