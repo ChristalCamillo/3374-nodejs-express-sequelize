@@ -3,15 +3,9 @@
 // Também é para mantermos uma compatibilidade com a documentação, que por enquanto está toda usando CommonJS.
 
 const express = require('express');
+const routes = require('./routes');
 
 const app = express();
-
-app.use(express.json());
-
-app.get('/teste', (req, res) => {
-  res
-    .status(200)
-    .send({ mensagem: 'boas-vindas à API' });
-});
+routes(app);
 
 module.exports = app;
