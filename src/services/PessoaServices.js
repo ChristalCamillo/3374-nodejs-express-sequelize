@@ -5,3 +5,5 @@ class PessoaServices extends Services {
     super('Pessoa');
   }
 }
+
+module.exports = PessoaServices;
